@@ -1,0 +1,191 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+
+p {
+  line-height: 1.6em; /*I find the default HTML line-height tends to be a bit claustrophobic for main text*/
+}
+
+img { 
+  max-width: 100%;
+  /* height: auto; */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.right {
+  float: right;
+  margin-left: 1em;
+}
+.left {
+  float: left;
+  margin-right: 1em;
+}
+.center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.caption {
+  margin-top: 0;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+h1, h2, h3, h4, h5 {
+  color: red;
+}
+
+.b {
+  font-style: bold;
+}
+
+/*#CONTAINER is the rectangle that contains everything but the background!*/
+#container {
+  margin: 50px auto;
+	max-width: 800px;
+	background-color: black;
+  border: 4px ridge blue;
+  /* outline-color: blue;
+  outline-style: ridge;
+  outline-width: 4px;
+  outline-offset: 0; */
+  /* z-index: 1; */
+  /* padding: 10px 5% 20px 5% */
+}
+
+#content {
+  padding: 10px 40px 20px;
+}
+
+#content > ul {
+  line-height: 1.6em;
+}
+
+#content > ul > li {
+  margin-bottom:4px;
+}
+
+.post {
+  text-align: left;
+}
+
+#container hr {
+  border: none;
+  background-image: url(../../images/linea.gif);
+  width: 600px;
+  height: 1px;
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+/* TOC STYLE */
+div.toc {
+   border: 1px solid yellow;
+   width: 50%;
+   margin-left: 15px;
+   padding: 5px;
+   margin-bottom: 15px;
+   float: right;
+}
+
+div.toc p {
+   margin: 0
+}
+
+.toc-list {
+   list-style-type: none;
+   margin: 0;
+}
+
+
+/*HEADER STYLE*/
+#header {
+  background-color: black;
+  border-color: blue;
+  border-style: ridge;
+  border-width: 0 0 4px 0;
+  font-size: 20px;
+}
+#header ul {
+  list-style-type: none;
+  padding: 5px 0;
+  margin: 0;
+}
+#header li {
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0.2em 0.7em;
+}
+#header li a {
+  color: yellow;
+  text-decoration: none;
+  background-color: inherit;
+}
+#header a:hover {
+  text-decoration: underline;
+}
+
+.wrapper {
+  /* width: 800px; */
+  /* overflow-y: scroll; */
+  background: url(../../images/bg/metrics.jpeg);
+  color: yellow;
+}
+
+/* body::after {
+  position: fixed;
+  bottom: -10px;
+  content: url(../../images/mayuspin.gif);
+  right: 50px;
+  z-index: 0;
+  max-width: 20%;
+} */
+
+/*POST LIST STYLE*/
+#postlistdiv ul {
+  font-size: 1.2em;
+  padding: 0;
+  list-style-type: none;
+}
+#recentpostlistdiv ul {
+  font-size: 1.2em;
+  padding: 0;
+  list-style-type: none;
+}
+.moreposts {
+  font-size: 0.8em;
+  margin-top: 0.2em;
+}
+
+/*NEXT AND PREVIOUS LINKS STYLE*/
+#nextprev {
+  text-align: center;
+  margin-top: 1.4em;
+}
+
+/*DISQUS STYLE*/
+#disqus_thread {
+  margin-top: 1.6em;
+}
+
+/*FOOTER STYLE*/
+#footer {
+  font-size: 0.8em;
+  padding: 0 5% 10px 5%;
+}
+
+#footer hr {
+  border: solid #c7b591;
+  border-width: 2px 0 0 0;
+}
+
+/* #nav {
+  border-right: 1px solid yellow;
+} */

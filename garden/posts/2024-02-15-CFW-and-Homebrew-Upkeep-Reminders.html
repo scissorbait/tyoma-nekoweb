@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Beginner Website-Making Resources</title> <!-- If you leave title as "Blog Post", it will automatically be updated to the post title -->
+    <meta charset="UTF-8">
+    <!-- my stuff -->
+    <link href="../../styles.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="manifest" href="../../site.webmanifest">
+    <!-- Here's the link to our CSS stylesheet! -->
+    <link href="../style/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <div class="container digi">
+      <!-- Side navigation! -->
+      <iframe title="Site navigation" src="../../nav.html" id="nav"></iframe>
+
+      <!-- Actual page! -->
+      <div class="wrapper">
+        <div id="container">
+         <div id="header">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../about.html">About</a></li>
+              <li><a href="../navigation.html">Navigation</a></li>
+              <li><a href="../archive.html">Archive</a></li>
+            </ul>
+          </div>
+          <div id="content" class="post">
+            <h1 id="postTitleH1">CFW and Homebrew Upkeep Reminders</h1>
+            <h4 id="postDate"></h4>
+            <div id="content">
+                <p>Filed under: <b>Technology, Tutorials/Guides</b></p>
+                <p>As much as I love hacking/modding my consoles, I sometimes have a really hard time actually properly using them. This is a HUGE problem when I've let one of my consoles lie dormant for a long time (cough cough my HEN PS3) and all of a sudden I can't remember how to transfer/download games to it, let alone update homebrew software! The following will be collections of notes I've made for my different modded consoles so I can easily get back to using them.</p>
+                <p>The reason I'm posting this PUBLICLY is because, who knows, maybe it'll help someone else! Some mods are remarkably easy and take little to no effort, so maybe I can give you some ideas :3 Just keep in mind that my setup may differ from yours, so adjust things accordingly.</p>
+                <h2>Dreamcast</h2>
+                <ul>
+                    <li>Utopia Boot disc needs to be used before playing burned/region-locked discs</li>
+                    <li>.cdi files are the disc images for Dreamcast (use Discjuggler and CD-R!!)</li>
+                </ul>
+                <h2>Playstation 1</h2>
+                <ul>
+                    <li>Use tonyhax memory card (slot 2) to play burned/region-locked discs
+                        <ol>
+                            <li>Boot up PS1 with nothing in disc tray</li>
+                            <li>Once tonyhax loads, you can insert the disc!</li>
+                        </ol>
+                    </li>
+                    <li>.bin files are the disc images for PS1 (use Discjuggler and CD-R!!)</li>
+                </ul>
+                <h2>PS2</h2>
+                <p><b>!!IMPORTANT!!</b> Only download PS2 games on the Thinkpad, because it's already set up with all the correct tools &gt; ethernet configuration!</p>
+                <p>(Note: the above is just for me it doesn't matter what computer YOU choose to use dear reader...)</p>
+                <ul>
+                    <li>Process before installing games to HDD:
+                        <ol>
+                            <li>Move game file to OPL oflder (DVD for .iso, CD for .bin/.cue)</li>
+                            <li>Open OPL Manager</li>
+                            <li>Get title from DB</li>
+                            <li>Try to update file name</li>
+                            <li>Batch Actions &gt; ART Download -&gt; Start</li>
+                            <li>Copy ART folder to a USB</li>
+                            <li>Overwrite ART folder in the OPL directory using uLaunchELF</li>
+                        </ol>
+                    </li>
+                    <li><strong>If PS2 HDD is connected to PC:</strong> Use HDL Batch Installer</li>
+                    <li><strong>If connecting to HDD with ethernet:</strong> HDL Game Installer (PC Client)</li>
+                    <li>.iso files are the disc images for PS2 (use ImgBurn and DVD-R!!)</li>
+                    <li>.bin files need to be converted to .iso, which can be done in OPL Manager</li>
+                </ul>
+                <h2>PS3</h2>
+                <ul>
+                    <li>Plain ol CFW lets you play burned/region-locked discs
+                        <ul>
+                            <li>Applies to PS1/PS2 discs as well as long as it's the older PS3 model</li>
+                            <li>Also fuck HEN, all my homies hate HEN. We use EvilNAT Cobra out here</li>
+                        </ul>
+                    </li>
+                    <li>Stupid abbreviation guide:
+                        <ul>
+                            <li><strong>CEX:</strong> consumer firmware, basically for consoles you'd buy in-store</li>
+                            <li><strong>DEX:</strong> developer/debug firmware (don't need this if you just wanna play games)</li>
+                            <li><strong>PEX:</strong> fancy evilNAT firmware that installs over CEX and allows you to swap between CEX/DEX</li>
+                            <li><strong>D-PEX:</strong> same as PEX but installs over DEX instead</li>
+                            <li><strong>REX:</strong> basically PEX but for use with Rebug CFW</li>
+                            <li><strong>D-REX:</strong> basically D-PEX but for use with Rebug CFW</li>
+                        </ul>
+                    </li>
+                </ul>
+            <footer>Last tended: 15 Feb, 2024</footer>
+            </div>
+            <div id="nextprev"></div>
+          </div> <!-- end of div id="content" -->
+          <div id="footer"></div>
+        </div> <!-- end of div id="container" -->
+      </div>
+    </div>
+  <!-- Here's the link to our JavaScript! -->
+  <audio id="musique" loop autoplay>
+    <source src="https://vgmsite.com/soundtracks/chibi-robo-ost/fxucesmnpz/06%20-%20Night%20Play.mp3">
+  </audio>
+  <script src="../script.js"></script>
+  </body>
+</html>

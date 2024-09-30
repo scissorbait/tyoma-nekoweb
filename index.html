@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+   <title>welcome to the tyoma zone...</title>
+   <link href="styles.css" rel="stylesheet" type="text/css">
+   <link rel="stylesheet" href="https://thegorkhonarchives.neocities.org/onionring/onionring.css">
+   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+   <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+   <div class="container">
+      <!-- Side navigation! -->
+      <iframe src="nav.html" id="nav" title="Side navigation"></iframe>
+      <!-- Main page -->
+      <div class="space">
+         <header>
+            <img src="images/tyomie.png" alt="Header image of me sticking out of a folder reading 'TYOMA dot COOL.' A little USB tail is sticking out the other end of the folder.">
+        </header> 
+        <main>
+            <div class="window-holder">
+                <div class="window intro">
+                    <div class="window-toolbar">
+                        <p id="toolbar-text">Last updated: September 11th, 2024</p>
+                        <p id="exit-button">X</p>
+                    </div>
+                    <div class="intro-text">
+                        <p>Hello people of online... welcome to my little zone of the web. I'm Tyoma! 
+                        <p>I'm an artist, music enjoyer, gamer, and did I mention music enjoyer? I'm also an aspiring DIY guy and jack-of-all-trades, but currently a master of none.</p>
+                        <p>Here you can find some of my art, links to my favorite websites, music I enjoy, and even more! This site is a living organism, so keep an eye out for <a href="updates.html">updates!</a></p>
+                        <p>By the way, if you want to follow me on Neocities, here is <a href="https://neocities.org/site/scissorbait" target="_parent">my profile!</a></p>
+                        <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=tyoma" defer></script>
+                    </div>
+                </div>
+                <div class="row-1">
+                    <div class="window window-blue">
+                        <div class="window-toolbar">
+                            <p id="toolbar-text">My links and webrings!</p>
+                            <p id="exit-button">X</p>
+                        </div>
+                        <div class="intro-text">
+                            <a href="https://ko-fi.com/scissorbait" target="main"><img src="images/kofibutton.gif" alt="ko-fi"></a>
+                            <a href="https://last.fm/user/sacrebisous" target="main"><img src="images/lastfmbutton.gif" alt="last.fm"></a>
+                            <a href="https://www.wishlistr.com/tyomiumoxide" target="main"><img src="images/wishlistbutton.gif" alt="wishlist"></a>
+                            <a href="https://toyhou.se/scissorbait" target="main"><img src="images/thbutton.gif" alt="toyhouse"></a>
+                            <br><br>
+                            <object id="melonland-surf-club" data="https://melonland.net/surf-badge.svg?fill=#ffdf00" type="image/svg+xml" style="width: 100px; height: 100px;"></object>
+                            <br>
+                            <div id='tga-webring-of-suok'>
+                               <script type="text/javascript" src="https://thegorkhonarchives.neocities.org/onionring/onionring-variables.js"></script>
+                               <script type="text/javascript" src="https://thegorkhonarchives.neocities.org/onionring/onionring-widget.js"></script>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="window window-green">
+                        <div class="window-toolbar">
+                            <p id="toolbar-text">Currently...</p>
+                            <p id="exit-button">X</p>
+                        </div>
+                        <div class="intro-text">
+                            <div id="lastfm-widget">
+                                <div id="widget"><h2>Listening to:</h2><span id="song">&#8987;</span></div>
+                                   <div>
+                                     <p><small>(powered by <a href="https://github.com/biancarosa/lastfm-last-played"
+                                                 target="_blank">@biancarosa/lastfm-last-played</a></small>)</p>
+                                   </div>
+                            </div>
+                            <script type="text/javascript">
+                                  let user = 'sacrebisous';
+                                  let url = 'https://lastfm-last-played.biancarosa.com.br/' + user + '/latest-song';
+                                  let song = document.querySelector('#song');
+                                  fetch(url)
+                                        .then(function (response) {
+                                           return response.json()
+                                        }).then(function (json) {
+                                           song.innerHTML = "<img src=" + json['track']['image']['2']['#text'] + "> <br> <a href=" + json['track']['url'] + '>' + json['track']['name'] + ' by ' + json['track']['artist']['#text'] + "</a>";
+                                        });
+                             n</script>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-2">
+                    <div class="window window-mag">
+                        <div class="window-toolbar">
+                            <p id="toolbar-text">Image of the week!</p>
+                            <p id="exit-button">X</p>
+                        </div>
+                           <img src="images/ftimg/freaky.png" alt="A fake screenshot of an iPhone incoming call. Photo of the caller is labeled 'freaky Mr. House' and shows an image of Mr. House from Fallout New Vegas pulling a latex glove off his hand using his teeth.">
+                           
+                    </div>
+                    <div class="window window-yellow">
+                        <div class="window-toolbar">
+                            <p id="toolbar-text">Other pages!</p>
+                            <p id="exit-button">X</p>
+                        </div>
+                        <div class="intro-text">
+                            <p><a href="updates.html">Update log</a></p>
+                            <p><a href="sanmos.html" target="main">Sanmos shrine</a></p>
+                            <p><a href="angels.html" target="main">Hierarchy of angels</a></p>
+                            <p>More to come...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="buttonz">
+                <!-- More to include:  -->
+            </div>
+        </main>
+        <br><br>
+        <footer>© JPP Gamers — 2018-2024</footer>
+        <br><br>
+        <audio id="musique" loop autoplay>
+            <source src="https://vgmsite.com/soundtracks/moon-remix-rpg-adventure/uompumvt/051%20-%20Pop%20May%20Day%20%28MoonDisc%20Version%29.mp3">
+        </audio>
+         <script src="scripts.js" async></script>
+      </div>
+   </div>
+</body>
+
+</html>

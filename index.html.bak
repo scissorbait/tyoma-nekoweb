@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>welcome to the tyoma zone...</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="styles.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+
+  <body class="space n">
+
+    <!-- Side navigation! -->
+    <iframe src="nav.html" id="nav"></iframe>
+
+    <!-- Actual page! -->
+    <div class="main">
+      <img src="images/explosion.gif" align="left" width="100px" height="100px" alt=""><img src="images/explosion.gif" align="right" width="100px" height="100px">
+      <img src="images/moi.png" alt="Header image description: a drawing of a person laying down with his right leg bent and upper body propped up by his left arm. His right arm is raised up halfway. The person has tan skin, green eyes and big puffy brown hair. He is wearing a black short-sleeved shirt with a red emoticon design, a black-and-red striped long sleeve shirt underneath, and knee-length grey shorts." width="300px">
+      <br>
+      <img src="images/devilwalk.gif" alt="An animated gif of a red demon with wings and holding a sword walking to the left." style="left:200px"> <img src="images/header.png" alt="tyoma.cool"> <img src="images/devilwalk2.gif" alt="An animated gif of a red demon with wings and holding a sword walking to the left." style="right:200px">
+      <br>
+      <marquee style="width:500px"><h3 style="color:red">THIS AIN'T YOUR GRANDMA'S CORNER OF THE NET!!</h3></marquee>
+      <br>
+
+      <div class="left">
+        <img src="images/updates.gif" alt="Updates!">
+        <br>
+        <div id="update">
+          <strong>7/13/2021</strong>
+          <p>Added a page that lists my commission info!</p>
+          <hr>
+          <strong>7/9/2021</strong>
+          <p>Added an extra bit of info to the main about page... plus some other teensy tiny changes... :^)</p>
+          <hr>
+          <strong>6/19/2021</strong>
+          <p>CD Review: Tiny Music by STP. Also rearranged some files so the URLs on the CD page look at least a bit less clunky.</p>
+          <hr>
+          <strong>6/16/2021</strong>
+          <p>Slightly shrunk the side navigation bar and added a few CD reviews for Nirvana's Incesticide and In Utero.</p>
+          <hr>
+          <strong>6/11/2021</strong>
+          <p>Added the CD collection page and some new banners to the sidebar!</p>
+          <hr>
+          <strong>6/7/2021</strong>
+          <p>Finally, the website overhaul I've been hyping up for a while!!! Completely new layout with some new pages (mainly the about)!! Links are down for now, but it'll be back up soon.</p>
+          <hr>
+          <strong>1/27/2021</strong>
+          <p>Jeez it's been a while! Anyways, I finally added the links page!</p>
+          <hr>
+          <strong>9/20/2020</strong>
+          <p>Added an easter egg to a hidden page! Can you find it? :3</p>
+          <hr>
+          <strong>9/17/2020</strong>
+          <p>Changed my name and transed my gender so I updated things to reflect that! </p>
+          <hr>
+          <strong>7/8/2020</strong>
+          <p>WHAT??? There's no way I started this project in 2018... Changed the Blog page to link to my Dreamwidth blog!</p>
+          <hr>
+          <strong>10/26/2019</strong>
+          <p>New blog post!</p>
+          <hr>
+          <strong>10/19/2019</strong>
+          <p>Added the Blog page, and made my first post!</p>
+          <hr>
+          <strong>9/19/2019</strong>
+          <p>Added the update section. Hope this works!</p>
+        </div>
+      </div>
+
+      <p class="main">Hello people of online... welcome to <span style="color:red">The Tyoma Zone.</span> Also known as the central hub of all Tyoma (your webmaster!) content. I really miss the olden days when everyone had a website and could make their own site dedicated to whatever they want, rather than having to rely on the Twitters and Tumblrs and Instagrams, and what have you!!! So that's why I made this page! There's gonna be my art, links to my favorite websites, music I enjoy, and more! It's just all a matter of when I end up making a page for it :3!</p>
+      <p>For right now the website is indefinitely under construction. But I hope you enjoy exploring what I have on display so far!</p>
+      <br><br>
+
+
+      <div class="spotify-widget"></div>
+
+      <h4>oh, uh, and if you wanna throw me a tip then....</h4>
+      <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'A21124LI');kofiwidget2.draw();</script>
+      <br>
+
+      <script src="https://npmcdn.com/spotifyCurrentlyPlaying.js/dist/spotifyCurrentlyPlaying.min.js"></script>
+      <script src="path/to/spotifyCurrentlyPlaying.min.js"></script>
+      <script type="text/javascript">
+        SCP({
+            selector: '.spotify-widget',
+            username: 'sacrebisous',
+            api_key: '411f85e51a942c983dfe82480c8e0998',
+            width: '100%',
+            height: '370'
+          });
+      </script>
+
+  </body>
+
+</html>
