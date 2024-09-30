@@ -401,16 +401,20 @@ div.update ul li::before {
    background-color: grey;
    background-image: url(images/bg/skulls.jpg);
    color: #D3D3D3;
-   padding: 0 100px;
+   padding: 0 10%;
    padding-bottom: 50px;
  }
+
+.mainabout > * {
+  max-width: 1200px;
+  margin: 15px auto;
+}
  
  .mainabout a {
    color: #0FF;
  }
  
  .mainabout table {
-    width: 80%;
     margin: 0 auto;
  }
  
