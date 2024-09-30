@@ -365,7 +365,6 @@
 
 div.update ul {
   list-style: none;
-  padding: 
 }
 
 div.update ul li::before {
@@ -422,8 +421,15 @@ div.update ul li::before {
    margin: 0;
    padding: 15px;
  }
- 
- 
+
+.mainabout .centflex {
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-direction: row;
+  /*align-items: baseline;*/
+  display: flex;
+}
+
  .version {
    background-image: url(images/bg/sworl.jpeg);
    color: #e6e6fa;
