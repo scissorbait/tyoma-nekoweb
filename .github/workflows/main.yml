@@ -5,26 +5,26 @@ jobs:
     runs-on: ubuntu-latest
     name: deploy2nekoweb
     steps:
-      - name: Disk Space Reclaimer
+      - name: Free Disk Space (Ubuntu)
       # You may pin to the exact commit or the version.
-      # uses: insightsengineering/disk-space-reclaimer@124df9d297f0327c676943bb718a894af8d3897f
-        uses: insightsengineering/disk-space-reclaimer@v1.1.0
+      # uses: jlumbroso/free-disk-space@54081f138730dfa15788a46383842cd2f914a1be
+        uses: jlumbroso/free-disk-space@v1.3.1
         with:
           # Remove Android runtime
-          android: true
+          android: # optional, default is true
           # Remove .NET runtime
-          dotnet: true
+          dotnet: # optional, default is true
           # Remove Haskell runtime
-          haskell: true
+          haskell: # optional, default is true
           # Remove large packages
-          large-packages: true
-          # Remove image tool cache
-          tools-cache: true
-          # Remove swap storage
-          swap-storage: true
+          large-packages: # optional, default is true
           # Remove Docker images
-          docker-images: true
-  
+          docker-images: # optional, default is true
+          # Remove image tool cache
+          tool-cache: # optional, default is false
+          # Remove swap storage
+          swap-storage: # optional, default is true
+          
       - name: Checkout
         uses: actions/checkout@v4
         
