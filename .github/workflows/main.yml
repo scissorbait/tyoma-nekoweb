@@ -1,6 +1,5 @@
 on: [push]
 name: My build action requiring more space
-on: push
 
 jobs:
   build:
