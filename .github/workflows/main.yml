@@ -2,7 +2,7 @@ on: [push]
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     name: deploy2nekoweb
     steps:
       - name: Disk Space Reclaimer
