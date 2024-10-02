@@ -1,38 +1,25 @@
-on: [push]
-name: My build action requiring more space
+name: Deploy to Nekoweb
+
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-  build:
-      name: Build my artifact
-      runs-on: ubuntu-latest
-      steps:
-        - name: Maximize build space
-          uses: easimon/maximize-build-space@master
-          with:
-            root-reserve-mb: 512
-            swap-size-mb: 1024
-            remove-dotnet: 'true'
-        - name: Checkout
-          uses: actions/checkout@v3
-  
-        - name: Build
-          run: |
-            echo "Free space:"
-            df -h
-  test:
+  deploy:
     runs-on: ubuntu-latest
-    name: deploy2nekoweb
+    
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
-        
-      # your build step here
-        
-      - name: deploy2nekoweb
-        uses: deploy2nekoweb/deploy2nekoweb@v4
-        with:
-          nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
-          nekoweb-cookie: ${{ secrets.NEKOWEB_COOKIE }}
-          nekoweb-folder: '/tyoma.cool'
-          directory: '/'
 
+      - name: Deploy to Nekoweb
+        uses: mp-pinheiro/nekoweb-deploy@main
+        with:
+          API_KEY: ${{ secrets.NEKOWEB_API_KEY }}
+          BUILD_DIR: './'
+          DEPLOY_DIR: '/tyoma.cool'
+          CLEANUP: 'False'
+          DELAY: '0.5'
+          NEKOWEB_PAGENAME: 'tyoma'
+          ENCRYPTION_KEY: ${{ secrets.NEKOWEB_ENCRYPTION_KEY }}
