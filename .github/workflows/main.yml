@@ -1,31 +1,32 @@
 on: [push]
-name: My build action requiring more space
 
 jobs:
-  build:
-      name: Build my artifact
-      runs-on: ubuntu-latest
-      steps:
-        - name: Maximize build space
-          uses: easimon/maximize-build-space@master
-          with:
-            root-reserve-mb: 512
-            swap-size-mb: 1024
-            remove-dotnet: 'true'
-        - name: Checkout
-          uses: actions/checkout@v3
-  
-        - name: Build
-          run: |
-            echo "Free space:"
-            df -h
   test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     name: deploy2nekoweb
     steps:
+      - name: Disk Space Reclaimer
+      # You may pin to the exact commit or the version.
+      # uses: insightsengineering/disk-space-reclaimer@124df9d297f0327c676943bb718a894af8d3897f
+        uses: insightsengineering/disk-space-reclaimer@v1.1.0
+        with:
+          # Remove Android runtime
+          android: true
+          # Remove .NET runtime
+          dotnet: true
+          # Remove Haskell runtime
+          haskell: true
+          # Remove large packages
+          large-packages: true
+          # Remove image tool cache
+          tools-cache: true
+          # Remove swap storage
+          swap-storage: true
+          # Remove Docker images
+          docker-images: true
+  
       - name: Checkout
         uses: actions/checkout@v4
-<<<<<<< HEAD
         
       # your build step here
         
@@ -36,22 +37,3 @@ jobs:
           nekoweb-cookie: ${{ secrets.NEKOWEB_COOKIE }}
           nekoweb-folder: '/tyoma.cool'
           directory: '/'
-
-=======
-
-      - name: Prepare build
-        run: |
-          mkdir -p ./build
-          cp -r ./public/* ./build
-
-      - name: Deploy to Nekoweb
-        uses: mp-pinheiro/nekoweb-deploy@main
-        with:
-          API_KEY: ${{ secrets.NEKOWEB_API_KEY }}
-          BUILD_DIR: './build'
-          DEPLOY_DIR: '/tyoma.cool'
-          CLEANUP: 'False'
-          DELAY: '0.5'
-          NEKOWEB_PAGENAME: 'tyoma'
-          ENCRYPTION_KEY: ${{ secrets.NEKOWEB_ENCRYPTION_KEY }}
->>>>>>> parent of c32e6dd (Update main.yml)
