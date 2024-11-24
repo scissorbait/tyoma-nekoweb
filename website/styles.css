@@ -250,7 +250,9 @@
 
 .window-mag {
   border: 4px outset rgb(224, 0, 202);
-  width: 100%;
+  /* width: 100%;  
+     -- uncomment this next week (12/1), probably --
+  */
   height: 100%;
   /* width: 500px; */
 }
