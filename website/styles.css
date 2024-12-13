@@ -52,6 +52,11 @@
    font-family: 'Dragons Gravity';
    src: url('Dragons\ Gravity.ttf') format('truetype');
  }
+
+ @font-face {
+  font-family: 'Crackdown';
+  src: url('crkdownr.ttf') format('truetype');
+ }
  
  html,
  body {
@@ -534,12 +539,18 @@ div.update ul li::before {
    padding: 10px;
    margin: 40px auto;
    width: 80%;
-   max-width: 1200px;
+   max-width: 1200px; text-align: left;
  }
+
+ .cdbody h1 {
+  font-family: 'Crackdown';
+  text-shadow: 2px 2px 4px #69c4ff;
+ }
+
  
  .cdbody img {
    border: 3px ridge #69c4ff;
-   margin: 20px;
+   margin-bottom: 20px;
    width: 300px;
  }
  
@@ -555,6 +566,14 @@ div.update ul li::before {
    float: left;
    margin: 20px;
  }
+
+ @media screen and (max-width: 800px) { 
+   .cdflex {
+      display: flex;
+      flex-direction: column;
+   }
+ }
+
  
  /* cd collection end */
  /* commissions begin */
