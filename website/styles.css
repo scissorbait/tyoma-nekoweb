@@ -1219,13 +1219,14 @@ div.mt-albumdisplay {
    list-style: none;
    list-style-type: none;
    margin: auto;
-   display: inline-flex;
+   display: inline-block;
  }
  
  .gallery li {
    width: 100px;
    font-size: 2em;
    list-style: none;
+   display: inline-block;
  }
  
  .gallery a {
