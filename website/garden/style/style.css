@@ -42,6 +42,16 @@ h1, h2, h3, h4, h5 {
   font-style: bold;
 }
 
+aside { 
+  width: 40%;
+  padding-left: 0.8rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  float: right;
+  font-style: italic;
+  border-left: 1px solid
+}
+
 /*#CONTAINER is the rectangle that contains everything but the background!*/
 #container {
   margin: 50px auto;
